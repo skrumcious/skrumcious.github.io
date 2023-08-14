@@ -1,3 +1,18 @@
+/* for this exercise I chose that interesting example by Jesse Lonergan - Hedra - page 25.jpg.
+ I looked at the E1 advanced example HTML provided to get an understanding of how I could organise my shapes in rows.
+I spent a very very long time changing the borders, starting with a very messy inline style:  for specific <div>s 
+and then moved towards using some custom css variables. These were hard to get my head around but useful, I found myself 
+trying to use a single custom variable to hold various different properties but later found it's best used for general stuff.
+
+To match the example, Hedra, I started off with 4 rows of 4 squares. Then I changed the border radius to make it have a rounded corner. 
+I also manipulated which sides of each square had borders, this was somewhat tedius because I had to re - ID a lot of divs. Everything was 
+very specific and perfect putting the specifics in inline style: and having broader stuff external; however, i understand it's 
+better to try and be organised and do things fully externally if possbile. I think I re-organised quite well.
+
+Finally, I went through to find redundant properties that I can just put in or already have in the next biggest container. E.g. having 
+justify-content: center in each row when I could just give that property to the class as a whole. 
+ */
+
 :root {
   --segborder: 2px solid rgb(74, 236, 160);
   --segment-fill: rgb(196, 185, 228);
