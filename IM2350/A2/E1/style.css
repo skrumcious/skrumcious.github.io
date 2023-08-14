@@ -1,0 +1,163 @@
+:root {
+  --segborder: 2px solid rgb(74, 236, 160);
+  --segment-fill: rgb(196, 185, 228);
+}
+
+.wrapper{ 
+  display: flex;
+  flex-direction:column;
+  background-image: linear-gradient(to bottom, #8d8dcb, #1f909b);
+  height: 100vh;
+  width: 71vh;
+  padding: 20px;
+}
+
+body {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+}
+#row1, .row {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25vh;
+    margin: 0.5vh;
+    justify-content:center; 
+  }
+
+#row2, .row {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    margin: 0.5vh;  
+    justify-content: center;
+  }
+
+
+#row3, .row {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    margin: 0.5vh;  
+    justify-content: center;
+  }
+
+
+#row4, .row {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    margin: 0.5vh;  
+    justify-content:center;
+  }
+
+#topleftcurve {
+border-top-left-radius: 60px;
+    border-top: var(--segborder);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+      );
+      background-size: 50px 50px;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+}
+
+#toprightcurve 
+  {
+    border-top-right-radius: 60px; 
+    border-top: var(--segborder);
+    background-image: linear-gradient(
+      to bottom left,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+      );
+      background-size: 48px 50px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+  }
+
+
+#bottomleftcurve {
+  border-bottom-left-radius: 60px;
+  border-bottom: var(--segborder);
+  background-image: linear-gradient(
+      to bottom left,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+      );
+}
+
+#bottomrightcurve {
+    border-bottom-right-radius: 60px; 
+    border-bottom: var(--segborder);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+      );
+    
+}
+
+#blockl {
+  border-left: var(--segborder);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+    );
+    background-size: 50px 80px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#blocklt {
+  border-left: var(--segborder); 
+  border-top: var(--segborder);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  );
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+
+}
+
+#blockr {
+  border-right: var(--segborder) ; 
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.502)
+    );  
+  background-size: 50px 80px;
+  background-repeat: no-repeat;
+}
+
+#blocklbr {
+  border-left: var(--segborder); 
+  border-bottom: var(--segborder);
+  border-right: var(--segborder); 
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 25, 255, 0.5)
+    );
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.segment {
+height: 80px;
+width: 80px;
+background-color: var(--segment-fill);
+}
