@@ -1,12 +1,19 @@
 html {
 background-color: rgb(0, 0, 0);
 }
+    
+@font-face {
+    font-family: 'Futura';
+    src: url(https://fonts.cdnfonts.com/css/futura-pt);
+    font-strech: wider;
+}
 
 body {
-    margin: 20px;
-    margin-top: 0;
-    padding: 0px;
-    
+    margin: 0;
+    background-size: 150%;
+    background-image: url("../images/liquidentropy.png");
+    background-attachment: fixed;
+    display: inline-block;
 }
 
 #introduction {
@@ -14,30 +21,41 @@ body {
     margin: 50px;
     padding: 50px;
     border: 8px #6a6283 solid;
+    font-family: 'Futura';
 }
 
-header {
+
+#toptitle {
     text-align: center;
     color: #a9a8c5; 
 }
 
-nav {
+
+#topbar {
     display: flex;
-  justify-content: center;
-  gap: 4rem;
-  max-width: 50%;
+  justify-content: space-evenly;
+  gap: 3rem;
+  max-width: 70%;
   padding: 30px;
   background-color: #a9a8c5;
   margin: 0 auto;
   border: 8px #6a6283 solid;
+  align-items: center;
 }
 
-.topbar a {
+#topbar a {
         display: block;
-        color: #3a4153;
-        font-size: 2rem;
+        color: #4b0b78;
+        font-size: 1.75rem;
+        font-family: 'Futura';
         text-align: center;
-        padding: 10px;
+        padding: 6px;
+        text-decoration: none;
+ }
+
+#topbar a:hover {
+    background-color: slateblue;
+    color:#a9a8c5;
 }
 
 .box {
@@ -54,4 +72,19 @@ h3 {
 
 img { 
     padding-left: 1;
+    float: inline-end;
+}
+
+li {
+    list-style-type: circle;
+}
+
+#foot {
+display: block;
+ width: 100%;
+ height: auto;
+ margin: 0;
+ padding-left: 10px;
+ border-top: 1px white solid;
+ color: white
 }
