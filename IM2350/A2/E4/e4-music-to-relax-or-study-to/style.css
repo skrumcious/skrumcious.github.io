@@ -5,8 +5,15 @@
 }
 
 /* My idea is to put some brief but meaningful interactivity in something that alot of people use to relax or study. 
-I'll implement some sort of toggle or slide system that changes the img place hold and background, 
-taking you through many suburban liminal spaces (i've been researching liminal spaces and liminal space imagery for the past couple months).  */ 
+I really like synthwave music and I've found that its a genre that has a lot of songs that still sound smooth when sped up. So, I thought 
+for a relaxation/study audio player synthwave is the most comprehensive. I've implemented LIT MODE which is for people who tend to listen to music
+while studying or working on whatever, who may want to up the energy if it's late at night or you're just not motivated. Lit mode has is a playbackrate button.
+With each click it cycles through playback rates 1.0, 1.25, and 1.5. This could be used as a short-term pickmeup if the slow tempo is making you drowsy
+or you're generally tired. Although it's just a playback rate button, theres various visible feedback such as the bg image, heroimage changing and saturating in
+relation to the speed. Obviously, one isn't expected to spend too long looking at this media player as it's purpose is audio; however, whether you're seeking
+relaxation or to up your focus for a final push to get the assignment done, I find visual stimulation of this kind beneficial regardless. A media player
+like this also allows hardworking students to take a much needed break as they enjoy a colorful interactive webpage, I believe that occasional distraction
+can be better than constant focus; it refreshs your brain.*/ 
 :root{
   --col-02:#f0f6f0;
   --col-03:#5252ff;
