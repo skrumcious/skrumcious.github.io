@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/stars2bg.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.image-overlay {
+    z-index: 2; /* Higher z-index to place image on top of the scrolling videos */
+    position:fixed;
+    bottom: -270px;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    align-items: stretch;
+    display: flex;
+    filter:blur(1px);
+
+}
+
+.image-overlay img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+#videocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: skew;
+}
+@keyframes skewy{
+    0%{ 
+    transform: SkewY(40deg);
+    }
+
+    50% {
+        transform: skewY(0deg);
+      
+    }
+    100% {
+        transform: SkewY(40deg);
+    }
+    
+    }
+
+
+#videocontainer span{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:100%;
+transform-origin: center;
+transform-style: preserve-3d;
+transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+
+
+.video {
+    display: flex;
+    padding:20px;
+    width:500px;
+    opacity: 0;
+    transform: translateY(-50px) translateZ(0);
+    transition: .5s ease-in;
+    transform-origin:top; 
+}
+
+.video.show {
+    transform: translateY(0);
+    opacity: 1;
+    width: 500px;
+    max-height: 500px;
+
+}
+
+/* The idea now that the infinite scroll is working is to give the entereing and exiting videos that skewed look.
+I hope to find a method of placing a filter on the viewport, to make the centre normal and the edges skewed, almost like a fisheye lens.
+*/
+
+/* I really struggled to find any good ways of doing all the things I wanted to with the time I had. Kept this class on the backburner for too long clearly.
+my studio was full on this year so my hours went to that. I will fix this scroll in my own time to make it 3D, I'll send you a link at that time.
