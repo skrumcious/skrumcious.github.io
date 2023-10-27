@@ -60,7 +60,7 @@ for (let i = 0; i < 10; i++) {
 //Finally i got this interaction observer infinite scroll to work
 
 
-const videoElements = document.querySelectorAll(".video");
+/* const videoElements = document.querySelectorAll(".video");
 
 videoElements.forEach(video => {
     video.addEventListener("click", () => {
@@ -72,6 +72,6 @@ videoElements.forEach(video => {
         }
     });
 });
-
+*/
 
 
