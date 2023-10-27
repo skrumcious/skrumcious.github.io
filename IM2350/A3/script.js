@@ -35,10 +35,10 @@ videos.forEach(video => {
 
 
 const videoSources = [
-    "video/River darknes loop final.mp4",
-    "video/trainstationedit.mp4",
+    "video/River darknes loop final.mov",
+    "video/trainstationedit.mov",
     "video/placeholder2.mp4",
-    "video/placeholder1.mp4"
+    "video/placeholder1.mov"
 ];
 
 let currentSourceIndex = 0;
