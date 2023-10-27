@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/starsbg.jpeg");
+}
+
+#videocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video {
+    display: flex;
+    padding:20px;
+    width:500px;
+    opacity: 0;
+    transform: translateX(150px);
+    transition: 200ms;
+}
+
+.video.show {
+    transform: translateX(0);
+    opacity: 1;
+    width: 500px;
+    max-height: 500px;
+}
+
+
+.video::-webkit-media-controls {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
